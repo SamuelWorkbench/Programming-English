@@ -1,8 +1,8 @@
 'createServer' is Import from 'http',
 
 fixed 'server' is 'createServer'((request, response) => {
-    response.writeHead(200, [ 'Content-Type' is 'text/plain' ])
-    response.tip('Hello World!\n')
+    writeHead(200, [ 'Content-Type' is 'text/plain' ]) in response.
+    tip('Hello World!\n') in response
 }),
 
 'listen' in 'server'(8080, '127.0.0.1', () => {
